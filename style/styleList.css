@@ -1,0 +1,44 @@
+.footer-list li {
+    list-style: none;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-list li::before {
+    content: "\2714";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 20px;
+    top: 0px;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px !important;
+}
+
+
+.footer-list.wrong li::before {
+    content: "X";
+    font-weight: bold;
+}
+
+.footer-list.warning li::before {
+    content: "\26A0";
+}
+
+.footer-list.star li::before {
+    content: "\2605";
+}
+
+.footer-list.heart li::before {
+    content: "\2661";
+    font-weight: bold;
+}
